@@ -8,18 +8,18 @@
 
 :root {
     /* Interface UI Colors */
-    --default-color: #9CCEF9;
+    --default-color: #f9c19c;
     --hover-color: #ffffff;
-    --active-color: #20A5D6;
-    --ui-border-color: #44626F;
-    --ui-border-color-dark: #3C5D80;
-    --ui-border-color-active: #00a4d9;
+    --active-color: #d68720;
+    --ui-border-color: #6f6144;
+    --ui-border-color-dark: #795125;
+    --ui-border-color-active: #d97b00;
     --primary-background-color: #000000;
-    --box-background-color: #3E5975;
+    --box-background-color: #75623e;
 
     /* Common palette */
     --ui-yellow: #E29E4A;
-    --ui-sky-blue: #6FBDE2;
+    --ui-sky-blue: #e2d16f;
     /* State palette */
     --ui-state-error: #FFCCCC;
     --ui-state-error-border: #993333;
@@ -33,20 +33,20 @@
     /* Text Colors */
     --text-color-active: #000000;
     --text-primary-color: #ffffff;
-    --text-secondary-color: #91b9cd;
-    --large-numbers-color: #6fbde2;
+    --text-secondary-color: #cdac91;
+    --large-numbers-color: #e46429;
     --text-disabled-color: #878787;
 
-    --input-background-color: #2c363f;
+    --input-background-color: #3f372c;
     --input-placeholder-color--hover: #4d5a63;
     --input-placeholder-color: #d3d3d3;
 
 
-    --table-hover-color: #2c363f;
+    --table-hover-color: #835521;
     --table-text-primary-color: #ffffff;
-    --table-text-secondary-color: #91b9cd;
+    --table-text-secondary-color: #cdae91;
 
-    --large-numbers-color:#6FBDE2;
+    --large-numbers-color:#e2996f;
 
     --state-error: #FFCCCC;
     --state-error-border: #FFCCCC;

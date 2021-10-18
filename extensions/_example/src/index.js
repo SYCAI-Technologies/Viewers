@@ -16,7 +16,7 @@ export default {
     commandsManager = {},
     appConfig = {},
     configuration = {},
-  }) {},
+  }) { },
 
   /**
    * MODULE GETTERS

@@ -17,7 +17,7 @@
   font-weight: 600;
   line-height: 24px;
   padding-right: 40px;
-  color: #91b9cd;
+  color: #cd9f91;
   margin: 0;
 }
 
@@ -29,7 +29,7 @@
   text-align: center;
   text-shadow: none;
   width: 20px;
-  color: #91b9cd;
+  color: #cdb591;
   cursor: pointer;
   position: absolute;
   right: 21px;
@@ -57,7 +57,7 @@
   height: 2px;
   transition: background-color 0.3s ease;
   width: 19px;
-  background-color: #91b9cd;
+  background-color: #cdb191;
 }
 
 .simpleDialog .header .closeIcon:before {
@@ -129,5 +129,5 @@
 
 .simpleDialog .footer .btn-confirm {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #b77333;
 }

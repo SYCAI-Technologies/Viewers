@@ -1,7 +1,62 @@
 window.config = {
   // default: '/'
   routerBasename: '/',
-  extensions: [],
+  whiteLabeling: {
+    /* Optional: Should return a React component to be rendered in the "Logo" section of the application's Top Navigation bar */
+    createLogoComponentFn: function (React) {
+      return React.createElement('a', {
+        target: '_self',
+        rel: 'noopener noreferrer',
+        className: 'header-brand',
+        href: 'https://www.sycaimedical.com/',
+        style: {
+          display: 'block',
+          textIndent: '-9999px',
+          background: 'url(./img/logo-sycai-fondo-azul.svg)',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          width: '200px',
+        },
+      });
+    },
+  },
+  extensions: [{
+    id: "myCustomExtension",
+    getToolbarModule() {
+      return {
+        definitions: [
+          {
+            id: "say-hell-world",
+            label: "🎉 HELLO WORLD 🎉",
+            icon: "exclamation-triangle",
+            type: "command",
+            commandName: "sayHelloWorld"
+          }
+        ],
+        defaultContext: "VIEWER"
+      };
+    },
+    getCommandsModule({ servicesManager }) {
+      const { UINotificationService } = servicesManager.services;
+
+      return {
+        definitions: {
+          sayHelloWorld: {
+            commandFn: function () {
+              console.log(UINotificationService);
+              UINotificationService.show({
+                title: "Funciona?",
+                message: "Hola"
+              });
+            },
+            storeContexts: [],
+            options: {}
+          }
+        },
+        defaultContext: ["VIEWER"]
+      };
+    }
+  }],
   showStudyList: true,
   filterQueryParam: false,
   disableServersCache: false,
@@ -135,4 +190,5 @@ window.config = {
   //  try setting this to even lower value
   // Leave it undefined for no limit, suitable for HTTP/2 enabled servers
   // maxConcurrentMetadataRequests: 5,
+
 };
