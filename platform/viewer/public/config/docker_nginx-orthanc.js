@@ -26,10 +26,10 @@ window.config = {
         definitions: [
           {
             id: "say-hell-world",
-            label: "🎉 HELLO WORLD 🎉",
+            label: "Diagnose",
             icon: "exclamation-triangle",
             type: "command",
-            commandName: "sayHelloWorld"
+            commandName: "diagnose"
           }
         ],
         defaultContext: "VIEWER"
@@ -40,18 +40,18 @@ window.config = {
 
       return {
         definitions: {
-          sayHelloWorld: {
+          diagnose: {
             commandFn: function () {
-              let a = window.location.pathname
-              let b = a.split("/")
-              console.log(b[2]);
-              fetch("http://127.0.0.1:8080/diagnose/" + b[2]).then(response =>
+              let pathname = window.location.pathname
+              let uid = pathname.split("/")
+              console.log(uid[2]);
+              fetch("http://127.0.0.1:8090/diagnose/" + uid[2]).then(response =>
                 response.json().then(data => {
                   console.log(data)
                 }))
               UINotificationService.show({
-                title: "Funciona?",
-                message: "Hola"
+                title: "Diagnosing...",
+                message: "Please allow up to 10 min and refresh"
               });
             },
             storeContexts: [],
