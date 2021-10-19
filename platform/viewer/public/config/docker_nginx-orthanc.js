@@ -1,31 +1,13 @@
 window.config = {
   routerBasename: '/',
-  whiteLabeling: {
-    /* Optional: Should return a React component to be rendered in the "Logo" section of the application's Top Navigation bar */
-    createLogoComponentFn: function (React) {
-      return React.createElement('a', {
-        target: '_self',
-        rel: 'noopener noreferrer',
-        className: 'header-brand',
-        href: 'https://www.sycaimedical.com/',
-        style: {
-          display: 'block',
-          textIndent: '-9999px',
-          background: 'url(./img/logo-sycai-fondo-azul.svg)',
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-          width: '200px',
-        },
-      });
-    },
-  },
+
   extensions: [{
-    id: "myCustomExtension",
+    id: "sycai-diagnose",
     getToolbarModule() {
       return {
         definitions: [
           {
-            id: "say-hell-world",
+            id: "diag",
             label: "Diagnose",
             icon: "exclamation-triangle",
             type: "command",

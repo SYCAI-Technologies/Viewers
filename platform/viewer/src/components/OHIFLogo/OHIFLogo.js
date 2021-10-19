@@ -9,9 +9,8 @@ function OHIFLogo() {
       target="_blank"
       rel="noopener noreferrer"
       className="header-brand"
-      href="http://www.google.com"
+      href="http://ohif.org"
     >
-      <Icon name="ohif-logo" className="header-logo-image" />
       {/* Logo text would fit smaller displays at two lines:
        *
        * Open Health
@@ -19,7 +18,7 @@ function OHIFLogo() {
        *
        * Or as `OHIF` on really small displays
        */}
-      <Icon name="ohif-text-logo" className="header-logo-text" />
+      <Icon name="sycai-logo" className="header-logo-text" />
     </a>
   );
 }

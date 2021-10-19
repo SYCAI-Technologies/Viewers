@@ -2,7 +2,7 @@
   display: none;
 }
 .OHIFCornerstoneViewportOverlay {
-  color: #9ccef9;
+  color: var(--default-color);
 }
 .OHIFCornerstoneViewportOverlay .overlay-element {
   position: absolute;
