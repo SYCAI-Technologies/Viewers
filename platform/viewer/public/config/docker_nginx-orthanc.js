@@ -9,7 +9,7 @@ window.config = {
           {
             id: "diag",
             label: "Diagnose",
-            icon: "exclamation-triangle",
+            icon: "brain",
             type: "command",
             commandName: "diagnose"
           }
