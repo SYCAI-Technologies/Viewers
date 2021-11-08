@@ -103,6 +103,7 @@
   font-weight: 700;
   color: #91b9cd;
   margin-right: 1rem;
+  visibility: hidden;
 }
 
 .notification-bar {
