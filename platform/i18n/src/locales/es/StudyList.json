@@ -4,7 +4,7 @@
   "MRN": "MRN",
   "Modality": "Modalidad",
   "PatientName": "Nombre del paciente",
-  "StudyDate": "Fetcha de estudio",
+  "StudyDate": "Fecha de estudio",
   "StudyDescription": "Descripción",
   "StudyList": "Lista de Estudio"
 }
