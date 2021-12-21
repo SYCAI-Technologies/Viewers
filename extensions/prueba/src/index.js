@@ -3,43 +3,38 @@
  */
 export default {
 
-  id: "prueba",
-  preRegistration(configuration = {}) {
-    init(configuration);
-  },
+  id: "sycai-diagnose",
   getToolbarModule() {
-
     return {
       definitions: [
         {
-          id: "say-hell-world",
-          label: "🎉 HELLO WORLD 🎉",
-          icon: "exclamation-triangle",
+          id: "diag",
+          label: "Diagnose",
+          icon: "brain",
           type: "command",
-          commandName: "sayHelloWorld"
+          commandName: "diagnose"
         }
       ],
       defaultContext: "VIEWER"
     };
   },
-
   getCommandsModule({ servicesManager }) {
     const { UINotificationService } = servicesManager.services;
 
-
-
     return {
       definitions: {
-        sayHelloWorld: {
+        diagnose: {
           commandFn: function () {
-            console.log("KSS");
-            fetch("http://127.0.0.1:8080/sample").then(response =>
+            let pathname = window.location.pathname
+            let uid = pathname.split("/")
+            console.log(uid[2]);
+            fetch("http://127.0.0.1:8090/diagnose/" + uid[2]).then(response =>
               response.json().then(data => {
                 console.log(data)
               }))
             UINotificationService.show({
-              title: "SOPInstanceUID",
-              message: "Hola"
+              title: "Diagnosing...",
+              //message: "Please allow up to 10 min and refresh"
             });
           },
           storeContexts: [],
