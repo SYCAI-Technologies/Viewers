@@ -35,6 +35,12 @@ function Header(props) {
             content: AboutContent,
             title: t('OHIF Viewer - About'),
           }),
+      }, {
+        title: t('Label'),
+        icon: { name: 'info' },
+        onClick: () =>
+          window.open(
+            "https://www.sycaimedical.com/", "_blank")
       },
       {
         title: t('Preferences'),

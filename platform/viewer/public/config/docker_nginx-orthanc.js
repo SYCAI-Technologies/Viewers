@@ -43,7 +43,7 @@ window.config = {
         defaultContext: ["VIEWER"]
       };
     }
-  },
+  }/*,
   {
     id: "sycai-disclaimer",
     getToolbarModule() {
@@ -86,9 +86,9 @@ window.config = {
         defaultContext: ["VIEWER"]
       };
     }
-  }],
+  }*/],
 
-  showStudyList: false,
+  showStudyList: true,
   servers: {
     dicomWeb: [
       {
