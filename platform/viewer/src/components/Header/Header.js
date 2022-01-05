@@ -40,7 +40,7 @@ function Header(props) {
         icon: { name: 'info' },
         onClick: () =>
           window.open(
-            "https://www.sycaimedical.com/", "_blank")
+            "https://raw.githubusercontent.com/dcumelles-sycai/Viewers/master/platform/viewer/public/img/label.png", "_blank")
       },
       {
         title: t('Preferences'),
