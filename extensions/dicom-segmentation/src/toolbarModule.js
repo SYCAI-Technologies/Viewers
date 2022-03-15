@@ -1,14 +1,14 @@
 /* TODO: Creation tools (future release).
-
+*/
 const TOOLBAR_BUTTON_TYPES = {
   COMMAND: 'command',
   SET_TOOL_ACTIVE: 'setToolActive',
   BUILT_IN: 'builtIn',
 };
 
-*/
 
-const definitions = []; /* TODO: Creation tools (future release). [
+
+const definitions = [];[
   {
     id: 'SegDropdown',
     label: 'Segmentation',
@@ -52,7 +52,7 @@ const definitions = []; /* TODO: Creation tools (future release). [
       },
     ],
   },
-]; */
+];
 
 export default {
   definitions,

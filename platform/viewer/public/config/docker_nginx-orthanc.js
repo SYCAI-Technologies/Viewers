@@ -99,6 +99,12 @@ window.config = {
         qidoSupportsIncludeField: false,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
+        requestOptions: {
+          "auth": "sycai:sycai",
+          "logRequests": true,
+          "logResponses": false,
+          "logTiming": true
+        },
       },
     ],
   },
