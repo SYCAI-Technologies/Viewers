@@ -9,7 +9,7 @@ function OHIFLogo() {
       target="_blank"
       rel="noopener noreferrer"
       className="header-brand"
-      href="http://ohif.org"
+      href="https://www.sycaimedical.com/"
     >
       {/* Logo text would fit smaller displays at two lines:
        *
