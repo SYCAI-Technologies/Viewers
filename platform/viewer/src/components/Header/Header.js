@@ -53,6 +53,13 @@ function Header(props) {
             title: t('User Preferences'),
           }),
       },
+	{
+        title: t('Logout'),
+        icon: { name: 'power-off' },
+        onClick: () =>
+          window.open(
+            "https://viewer.sycaimedical.com/logout", "_self")
+	},
     ];
 
     if (user && userManager) {

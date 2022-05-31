@@ -54,7 +54,7 @@ const appProps = {
     OHIFDicomSegmentationExtension,
     OHIFDicomRtExtension,
     //OHIFDebuggingExtension,
-    //OHIFDicomTagBrowserExtension,
+    OHIFDicomTagBrowserExtension,
   ],
 };
 
