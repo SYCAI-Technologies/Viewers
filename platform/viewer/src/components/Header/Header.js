@@ -40,7 +40,7 @@ function Header(props) {
         icon: { name: 'info' },
         onClick: () =>
           window.open(
-            "https://raw.githubusercontent.com/dcumelles-sycai/Viewers/master/platform/viewer/public/img/label.png", "_blank")
+            "https://viewer.sycaimedical.com/label", "_blank")
       },
       {
         title: t('Preferences'),
@@ -53,13 +53,13 @@ function Header(props) {
             title: t('User Preferences'),
           }),
       },
-	{
+      {
         title: t('Logout'),
         icon: { name: 'power-off' },
         onClick: () =>
           window.open(
             "https://viewer.sycaimedical.com/logout", "_self")
-	},
+      },
     ];
 
     if (user && userManager) {
