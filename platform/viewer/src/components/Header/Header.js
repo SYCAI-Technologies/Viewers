@@ -27,7 +27,7 @@ function Header(props) {
 
   useEffect(() => {
     const optionsValue = [
-      {
+      /*{
         title: t('About'),
         icon: { name: 'info' },
         onClick: () =>
@@ -35,7 +35,8 @@ function Header(props) {
             content: AboutContent,
             title: t('OHIF Viewer - About'),
           }),
-      }, {
+      }, */
+      {
         title: t('Label'),
         icon: { name: 'info' },
         onClick: () =>
