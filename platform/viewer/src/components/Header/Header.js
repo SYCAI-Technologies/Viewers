@@ -42,7 +42,7 @@ function Header(props) {
           window.open(
             "https://viewer.sycaimedical.com/label", "_blank")
       }, {
-        title: t('Release'),
+        title: t('Release Notes'),
         icon: { name: 'info' },
         onClick: () =>
           window.open(
