@@ -198,35 +198,35 @@ const definitions = [
   //      type: TOOLBAR_BUTTON_TYPES.COMMAND,
   //      commandName: 'flipViewportVertical',
   //    },
-  //    {
-  //      id: 'Clear',
-  //      label: 'Clear',
-  //      icon: 'trash',
-  //      //
-  //      type: TOOLBAR_BUTTON_TYPES.COMMAND,
-  //      commandName: 'clearAnnotations',
-  //    },
-  //    {
-  //      id: 'Bidirectional',
-  //      label: 'Bidirectional',
-  //      icon: 'measure-target',
-  //      //
-  //      type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-  //      commandName: 'setToolActive',
-  //      commandOptions: { toolName: 'Bidirectional' },
-  //    },
-  //    {
-  //      id: 'Download',
-  //      label: 'Download',
-  //      icon: 'create-screen-capture',
-  //      //
-  //      type: TOOLBAR_BUTTON_TYPES.BUILT_IN,
-  //      options: {
-  //        behavior: TOOLBAR_BUTTON_BEHAVIORS.DOWNLOAD_SCREEN_SHOT,
-  //        togglable: true,
-  //      },
-  //    },
-  //  ],
+      {
+        id: 'Clear',
+        label: 'Clear',
+        icon: 'trash',
+        //
+        type: TOOLBAR_BUTTON_TYPES.COMMAND,
+        commandName: 'clearAnnotations',
+      },
+      //{
+      //  id: 'Bidirectional',
+      //  label: 'Bidirectional',
+      //  icon: 'measure-target',
+      //  //
+      //  type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+      //  commandName: 'setToolActive',
+      //  commandOptions: { toolName: 'Bidirectional' },
+      //},
+      //{
+      //  id: 'Download',
+      //  label: 'Download',
+      //  icon: 'create-screen-capture',
+      //  //
+      //  type: TOOLBAR_BUTTON_TYPES.BUILT_IN,
+      //  options: {
+      //    behavior: TOOLBAR_BUTTON_BEHAVIORS.DOWNLOAD_SCREEN_SHOT,
+      //    togglable: true,
+      //  },
+      //},
+    //],
   //},
   {
     id: 'Exit2DMPR',
